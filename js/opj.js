@@ -66,11 +66,11 @@ seattle.return();
 const tokyo = {
 
   location : 'tokyo',
-  minCust :23,
-  maxCust :65,
+  minCust :3,
+  maxCust :24,
   numOfCustPerHour:[],
   amountPurchEechHour:[],
-  avgCS : 6.3,
+  avgCS : 1.2,
   total:0,
   ginCustPerH:function(){
     for(let i = 0; i<time.length; i++){
@@ -123,11 +123,11 @@ tokyo.return();
 const dubai = {
 
   location : 'dubai',
-  minCust :23,
-  maxCust :65,
+  minCust :11,
+  maxCust :38,
   numOfCustPerHour:[],
   amountPurchEechHour:[],
-  avgCS : 6.3,
+  avgCS : 3.7 ,
   total:0,
   ginCustPerH:function(){
     for(let i = 0; i<time.length; i++){
@@ -180,11 +180,11 @@ dubai.return();
 const paris = {
 
   location : 'paris',
-  minCust :23,
-  maxCust :65,
+  minCust :20,
+  maxCust :38,
   numOfCustPerHour:[],
   amountPurchEechHour:[],
-  avgCS : 6.3,
+  avgCS : 2.3,
   total:0,
   ginCustPerH:function(){
     for(let i = 0; i<time.length; i++){
@@ -238,11 +238,11 @@ paris.return();
 const lima = {
 
   location : 'lima',
-  minCust :23,
-  maxCust :65,
+  minCust :2,
+  maxCust :16,
   numOfCustPerHour:[],
   amountPurchEechHour:[],
-  avgCS : 6.3,
+  avgCS : 4.6,
   total:0,
   ginCustPerH:function(){
     for(let i = 0; i<time.length; i++){
