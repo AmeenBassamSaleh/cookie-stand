@@ -1,0 +1,107 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background-color: rgb(255, 225, 187);
+}
+header{
+  padding: 10px;
+  background-color: rgb(78, 10, 10);
+}
+.h1{
+ text-align: center;
+ font-size: 40px;
+ font-weight: bold;
+ color: rgb(255, 225, 187);
+}
+.sal{
+  margin: 50px;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: rgb(78, 10, 10);
+  text-decoration: none;
+  font-size: 30px;
+  padding: 30px;
+  height: fit-content;
+  color: rgb(255, 225, 187);
+  margin-left: 38%;
+}
+
+main{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 70px;
+ }
+
+.sa{
+  width: 700px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+
+
+
+
+footer{
+  padding: 10px;
+  background-color: rgb(78, 10, 10);
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(255, 225, 187);
+}
+.fish{
+  width: 100px;
+  margin-left: 30%;
+}
+.fosted{
+  width: 140px;
+  margin-left: 300px;
+}
+.chiook{
+  width: 240px;
+}
+.family{
+  margin-left: 240px;
+}
+.shirt{
+  margin-left: 700px;
+  margin-top: 3%;
+}
+.qw{
+  text-align: center;
+  font-size: 30px;
+  /* margin: 20px; */
+  display: inline-block;
+  border-radius: 15px;
+  background-color: rgb(78, 10, 10);
+  text-decoration: none;
+  font-size: 30px;
+  padding: 30px;
+  height: fit-content;
+  color: rgb(255, 225, 187);
+  margin-left: 25%;
+
+}
+
+
+table {
+  width: 50%;
+  margin: 2%;
+  min-width: 1000px;
+}
+
+table, td,th{
+  border-style: solid;
+  border-color: rgb(78, 10, 10) ;
+  color: rgb(255, 255, 255);
+  background-color: rgb(78, 10, 10);
+  padding: 12px 15px;
+}
+.bra{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(255, 225, 187);
+  margin-bottom: 3%;
+}
