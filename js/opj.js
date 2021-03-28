@@ -10,23 +10,23 @@ function getRandomNumber(max, min) {
 }
 
 const container = document.getElementById('select');
-const table = document.createElement('table');
-container.appendChild(table);
+const ameen = document.getElementById('ameen');
+// container.appendChild(ameen);
 
 function tab() {
 
   const tr1 = document.createElement('tr');
-  container.appendChild(tr1);
+  ameen.appendChild(tr1);
   const th0 = document.createElement('th');
-  container.appendChild(th0);
+  tr1.appendChild(th0);
   th0.textContent = `location`;
   for (let i = 0; i < time.length; i++) {
     const th1 = document.createElement('th');
-    container.appendChild(th1);
+    tr1.appendChild(th1);
     th1.textContent = `${time[i]}`;
   };
   const th98 = document.createElement('th');
-  container.appendChild(th98);
+  tr1.appendChild(th98);
   th98.textContent = `totalPurBra`;
 
 }
@@ -66,17 +66,17 @@ Fish.prototype.amountHuor = function () {
 }
 Fish.prototype.render = function () {
   const tr2 = document.createElement('tr');
-  container.appendChild(tr2);
+  ameen.appendChild(tr2);
   const th3 = document.createElement('th');
-  container.appendChild(th3);
+  tr2.appendChild(th3);
   th3.textContent = this.location;
   for (let i = 0; i < time.length; i++) {
     const th4 = document.createElement('td');
-    container.appendChild(th4);
+    tr2.appendChild(th4);
     th4.textContent = `${this.amountPurchEechHour[i]}`;
   }
   const th5 = document.createElement('td');
-  container.appendChild(th5);
+  tr2.appendChild(th5);
   th5.textContent = `${this.total}`;
 };
 
@@ -137,33 +137,29 @@ function addBranch(event) {
   let minCust = event.target.minCust.value;
   let maxCust = event.target.maxCust.value;
   let avgCS = event.target.avgCS.value;
-  console.log(location);
-  console.log(event);
+  // console.log(location);
+  // console.log(event);
 
   let newloc = new Fish(location, minCust, maxCust, avgCS);
 
+  
+  ameen.deleteRow(-1);
 
-  let table = document.querySelector('table');
+  console.log(ameen)
+  // let ameen = document.querySelector('table');
 
-  let myForm = document.getElementById('table');
-  myForm.addEventListener('submit', addBranch);
+  // let myForm = document.getElementById('table');
+  // myForm.addEventListener('submit', addBranch);
   newloc.ginCustPerH();
   newloc.amountHuor();
 
-
   newloc.render();
-  // newloc.tab1();
-
-  tab1();
-  let a = document.getElementById('table');
-  a.deleteRow(table.rows.length - 1);
-  // tab1();
   
-
+  tab1();
 
 
 };
-tab1();
+
 
 
 
@@ -182,24 +178,24 @@ tab1();
 function tab1() {
 
   const tr88 = document.createElement('tr');
-  container.appendChild(tr88);
+  ameen.appendChild(tr88);
   const th88 = document.createElement('th');
-  container.appendChild(th88);
+  tr88.appendChild(th88);
   th88.textContent = `TotalsPerH`;
   let sum = 0;
   for (let i = 0; i < time.length; i++) {
     const th99 = document.createElement('th');
-    container.appendChild(th99);
+    tr88.appendChild(th99);
     th99.textContent = `${totof[i]}`;
   };
 
   for (let i = 0; i < totos.length; i++) {
     sum = sum + totos[i].total;
   }
-  console.log(sum);
-  console.log(totos);
+  // console.log(sum);
+  // console.log(totos);
   const th99 = document.createElement('th');
-  container.appendChild(th99);
+  tr88.appendChild(th99);
   th99.textContent = `${sum}`;
 }
 
@@ -208,7 +204,7 @@ function tab1() {
 // table.deleteRow(table.rows.length -2);
 // tblFooter();
 
-
+tab1();
 
 
 
@@ -340,7 +336,7 @@ function tab1() {
 //   newloc.ginCustPerH();
 //   newloc.amountHuor();
 //   newloc.render();
-//   // newloc.tab1();
+//   // newloc.();
 
 // };
 
@@ -381,7 +377,7 @@ function tab1() {
 // Lima.render();
 
 
-// function tab1() {
+// function () {
 
 //   const tr88 = document.createElement('tr');
 //   container.appendChild(tr88);
@@ -411,6 +407,5 @@ function tab1() {
 
 
 
-// tab1();
 
 
