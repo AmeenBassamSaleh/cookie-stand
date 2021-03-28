@@ -31,9 +31,6 @@ function tab() {
 
 }
 
-
-
-
 let totos = [];
 
 
@@ -83,18 +80,6 @@ Fish.prototype.render = function () {
   th5.textContent = `${this.total}`;
 };
 
-//  function totoft(){
-//   const tr7 = document.createElement('tr');
-//   container.appendChild(tr7);
-//   const th7 = document.createElement('th');
-//   container.appendChild(th7);
-//   th7.textContent = `totaloftotal`
-//   for (let i = 0; i < time.length; i++) {
-//     const th8 = document.createElement('td');
-//     container.appendChild(th8);
-//     th8.textContent = this.totalof[i];
-//   };
-// };console.log(totoft)
 
 tab();
 
@@ -134,8 +119,65 @@ Lima.render();
 
 
 
-// tab1();
+
+
 // addBranch();
+
+
+let myForm = document.getElementById('lab09');
+
+myForm.addEventListener('submit', addBranch);
+
+function addBranch(event) {
+
+  event.preventDefault();
+
+  let location = event.target.location.value;
+  // console.log(event);
+  let minCust = event.target.minCust.value;
+  let maxCust = event.target.maxCust.value;
+  let avgCS = event.target.avgCS.value;
+  console.log(location);
+  console.log(event);
+
+  let newloc = new Fish(location, minCust, maxCust, avgCS);
+
+
+  let table = document.querySelector('table');
+
+  let myForm = document.getElementById('table');
+  myForm.addEventListener('submit', addBranch);
+  newloc.ginCustPerH();
+  newloc.amountHuor();
+
+
+  newloc.render();
+  // newloc.tab1();
+
+  tab1();
+  let a = document.getElementById('table');
+  a.deleteRow(table.rows.length - 1);
+  // tab1();
+  
+
+
+
+};
+tab1();
+
+
+
+
+// function insert_Row()
+// {
+//     let xTable = document.getElementById('lab09');
+//     let index = xTable.rows.length - 1;
+//     let tr = xTable.insertRow(index);
+//     tr.innerHTML = "" ;
+// }
+
+
+
 
 function tab1() {
 
@@ -162,38 +204,26 @@ function tab1() {
 }
 
 
+// let table = document.getElementById('allLocations');
+// table.deleteRow(table.rows.length -2);
+// tblFooter();
 
 
-let myForm = document.getElementById('lab09');
-
-myForm.addEventListener('submit', addBranch);
-
-function addBranch(event) {
-  event.preventDefault();
-
-  let location = event.target.location.value;
-  // console.log(event);
-  let minCust = event.target.minCust.value;
-  let maxCust = event.target.maxCust.value;
-  let avgCS = event.target.avgCS.value;
-  console.log(location);
-  console.log(event);
-
-  let newloc = new Fish(location, minCust, maxCust, avgCS * -1);
-  let table = document.querySelector('table');
-  // table.deleteRow(-1);
-  // th99.textContent =sum*
-  newloc.ginCustPerH();
-  newloc.amountHuor();
-  newloc.render();
-  // newloc.tab1();
-  tab1();
-
-};
 
 
-tab1();
-//
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // 'use strict';
